@@ -30,7 +30,7 @@ def format_responce(weather):
 
 
 def get_weather(city):
-    weather_key='f831ea411b2ed1667ff737debbebd382'
+    weather_key=APIKEY
     url= 'http://api.openweathermap.org/data/2.5/weather'
     params = {'APPID': weather_key, 'q': city, 'units': 'Metric'}
     response=requests.get(url, params=params)
